@@ -13,9 +13,10 @@ else
 fi
 
 cd project &
-cp -r /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/bagfiles/path_rec.bag /home/turtlebot/fuerte_workspace/sandbox/project/map1.pgm &
+cp -r ../bagfiles/path_rec.bag ../project/map1.bag &
 git add .
 git commit -am 'new file uploaded' 
+git add .
 git push origin master 
 
 exec "$@"
