@@ -1,0 +1,23 @@
+<package>
+  <description brief="knowrobcloud">
+
+     knowrobcloud
+
+  </description>
+  <author>Turtle bot</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/knowrobcloud</url>
+  <depend package="std_msgs"/>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="geometry_msgs"/>
+  <depend package="sensor_msgs"/>
+  <depend package="nav_msgs"/>
+  <depend package="mod_vis"/>
+  <depend package="ias_semantic_map"/>
+  <depend package="rosbag"/>
+  <depend package="occupancy_grid_utils"/> 
+</package>
+
+

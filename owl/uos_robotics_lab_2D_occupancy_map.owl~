@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY roboearth_path 'http://ias.cs.tum.edu/kb/'>
+    <!ENTITY kb "http://ias.cs.tum.edu/kb/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY knowrob "http://ias.cs.tum.edu/kb/knowrob.owl#" >
+    <!ENTITY roboearth "http://www.roboearth.org/kb/roboearth.owl#" >
+    <!ENTITY uos_occ_map "http://ias.cs.tum.edu/kb/uos_robotics_lab_2D_occupancy_map.owl#" >
+]>
+
+<rdf:RDF xmlns="&uos_occ_map;#"
+     xml:base="&uos_occ_map;"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="&xsd;"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:roboearth="&roboearth;"
+     xmlns:knowrob="&knowrob;">
+    <owl:Ontology rdf:about="&uos_occ_map;">
+        <owl:imports rdf:resource="&roboearth_path;roboearth.owl"/>
+    </owl:Ontology>
+
+    <knowrob:City rdf:about="#Salford">
+      <rdfs:label xml:lang="en">Salford</rdfs:label>
+      <rdfs:label xml:lang="en">Salford</rdfs:label>
+      <knowrob:properPhysicalParts rdf:resource="#Street03"/>
+    </knowrob:City>
+
+    <knowrob:Street rdf:about="#Street03">
+      <rdfs:label rdf:datatype="&xsd;string">TheCrescent</rdfs:label>
+      <knowrob:properPhysicalParts rdf:resource="#Building19"/>
+    </knowrob:Street>
+
+    <knowrob:Building rdf:about="#Building19">
+      <knowrob:streetNumber rdf:datatype="&xsd;string">4</knowrob:streetNumber>
+      <knowrob:properPhysicalParts rdf:resource="#Level2013"/>
+    </knowrob:Building>
+
+    <knowrob:LevelOfAConstruction rdf:about="#Level2013">
+      <knowrob:floorNumber rdf:datatype="&xsd;string">0</knowrob:floorNumber>
+      <knowrob:properPhysicalParts rdf:resource="#Room20"/>
+    </knowrob:LevelOfAConstruction>
+
+    <knowrob:RoomInAConstruction rdf:about="#Room20">
+      <knowrob:roomNumber rdf:datatype="&xsd;string">G20</knowrob:roomNumber>
+      <knowrob:describedInMap rdf:resource="#OccupancyGridMap2708"/>
+    </knowrob:RoomInAConstruction>
+
+
+    <owl:NamedIndividual rdf:about="&uos_occ_map;OccupancyGridMap2708">
+        <rdf:type rdf:resource="&roboearth;OccupancyGridMap"/>
+        <roboearth:linkToMapFile>https://www.dropbox.com/s/ood4nv3v90wluw2/robo_lab2.yaml</roboearth:linkToMapFile> 
+        <roboearth:linkToImageFile>https://www.dropbox.com/s/yl89y81potkfqy0/robo_lab2.pgm</roboearth:linkToImageFile> 
+    </owl:NamedIndividual>
+
+</rdf:RDF>
+

@@ -1,0 +1,2 @@
+%time,field.position.x,field.position.y,field.position.z,field.orientation.x,field.orientation.y,field.orientation.z,field.orientation.w
+1378125055768030171,-3.45276247247,-0.0541292883904,0.0,0.0,0.0,-0.755209372033,0.655483641591

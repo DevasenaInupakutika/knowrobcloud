@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="map_file1" default="/home/turtlebot/robo_lab2p2.yaml"/>
+  
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file1)">
+            <remap from="map" to="map1"/>
+  </node>
+
+  </launch>
