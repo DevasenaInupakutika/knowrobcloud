@@ -33,6 +33,7 @@ rosbuild_add_executable(read_path src/read_path.cpp)
 rosbuild_add_executable(talker src/talker.cpp)
 rosbuild_add_executable(listener src/listener.cpp)
 rosbuild_add_executable(occ_comb_map src/occ_comb_map.cpp)
+rosbuild_add_executable(align_pub src/align_pub.cpp)
 target_link_libraries(occ_comb_map occupancy_grid_merge)
 
 

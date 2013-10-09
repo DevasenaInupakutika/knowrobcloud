@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/coordinate_conversions.cpp
-coordinate_conversions.h
-/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/coordinate_conversions.h
-
 /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/coordinate_conversions.h
 exceptions.h
 /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/exceptions.h
@@ -32,6 +28,32 @@ boost/format.hpp
 stdexcept
 -
 geometry_msgs/Point.h
+-
+
+/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/gcc_version.h
+
+/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/merge_grids.cpp
+merge_grids.h
+/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/merge_grids.h
+coordinate_conversions.h
+/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/coordinate_conversions.h
+ros/assert.h
+-
+boost/foreach.hpp
+-
+boost/optional.hpp
+-
+boost/bind.hpp
+-
+boost/ref.hpp
+-
+set
+-
+gcc_version.h
+/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/gcc_version.h
+
+/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/merge_grids.h
+nav_msgs/OccupancyGrid.h
 -
 
 /opt/ros/fuerte/include/geometry_msgs/Point.h

@@ -204,7 +204,7 @@ TOOLCHAINCONFIG:FILEPATH=TOOLCHAINCONFIG-NOTFOUND
 USERCONFIG:FILEPATH=USERCONFIG-NOTFOUND
 
 //Path to a file.
-_file_name:FILEPATH=/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/occ_comb_map.cpp
+_file_name:FILEPATH=/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/align_pub.cpp
 
 //Value Computed by CMake
 knowrobcloud_BINARY_DIR:STATIC=/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build

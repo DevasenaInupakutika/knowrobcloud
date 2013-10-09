@@ -8,18 +8,18 @@ using namespace occupancy_grid_merge;
 
 nav_msgs::OccupancyGrid::ConstPtr map1;
 nav_msgs::OccupancyGrid::ConstPtr map2;
-bool newMap1 = false;
-bool newMap2 = false;
-bool eachMapReceivedOnce = false;
+bool Map1rec = false;
+bool Map2rec = false;
+bool maps_get_once = false;
 
 void map1Callback(const nav_msgs::OccupancyGrid::ConstPtr &msg) 
 {
-   map1 = msg; newMap1 = true; 
+   map1 = msg; Map1rec = true; 
 }
 
 void map2Callback(const nav_msgs::OccupancyGrid::ConstPtr &msg) 
 {
-   map2 = msg; newMap2 = true; 
+   map2 = msg; Map2rec = true; 
 }
 
 int main(int argc, char** argv) 
@@ -39,24 +39,24 @@ int main(int argc, char** argv)
    ros::Rate r(5.0);
 
    while(n.ok()){
-      if (newMap1 && newMap2) {
-          eachMapReceivedOnce = true;
+      if (Map1rec && Map2rec) {
+          maps_get_once = true;
       }
 
-    if(eachMapReceivedOnce && (newMap1 || newMap2)){
+    if(maps_get_once && (Map1rec || Map2rec)){
         std::vector<nav_msgs::OccupancyGrid::ConstPtr> grids(2);
-        nav_msgs::OccupancyGrid::ConstPtr mapOut;
+        nav_msgs::OccupancyGrid::ConstPtr merged_map;
 
       
 
         grids[0] = map1;
         grids[1] = map2;
 
-        mapOut = mergeGrids(grids, 0.05);
-        map_pub.publish(mapOut);
+        merged_map = mergeGrids(grids, 0.05);
+        map_pub.publish(merged_map);
 
-        newMap1 = false;
-        newMap2 = false;
+        Map1rec = false;
+        Map2rec = false;
 
     }
 

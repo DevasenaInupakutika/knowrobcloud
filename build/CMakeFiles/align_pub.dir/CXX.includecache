@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/merge_grids.h
-nav_msgs/OccupancyGrid.h
--
-
-/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/occ_comb_map.cpp
+/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/align_pub.cpp
 ros/ros.h
 -
 nav_msgs/OccupancyGrid.h
@@ -19,8 +15,6 @@ tf/transform_broadcaster.h
 -
 tf/transform_listener.h
 -
-merge_grids.h
-/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/src/merge_grids.h
 
 /opt/ros/fuerte/include/XmlRpcDecl.h
 ros/macros.h

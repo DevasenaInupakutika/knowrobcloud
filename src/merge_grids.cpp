@@ -193,6 +193,8 @@ GridPtr mergeGrids (const vector<GridConstPtr>& grids, const double resolution)
 {
   GridPtr merged_grid(new nm::OccupancyGrid());
   merged_grid->info = getMergedGridInfo(grids, resolution);
+  merged_grid->info.width = 800;
+  merged_grid->info.height = 800;
   merged_grid->data.resize(merged_grid->info.width*merged_grid->info.height);
   fill(merged_grid->data.begin(), merged_grid->data.end(), -1);
   ROS_DEBUG_NAMED ("merge_grids", "Merging %zu grids", grids.size());

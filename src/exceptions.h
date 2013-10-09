@@ -33,7 +33,7 @@ struct CellOutOfBoundsException: public GridUtilsException
     GridUtilsException(format("Cell %1%, %2% is off grid") % x % y) {}
 };
 
-/// \brief Exception when data field is not a vector of the right size
+// Exception when data field is not a vector of the right size
 struct DataSizeException: public GridUtilsException
 {
   DataSizeException (const unsigned expected, const unsigned actual) :

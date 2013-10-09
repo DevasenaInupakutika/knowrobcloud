@@ -2,6 +2,7 @@
 /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles/ROSBUILD_genmsg_lisp.dir
 /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir
 /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles/ROSBUILD_gensrv_lisp.dir
+/home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles/align_pub.dir
 /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles/clean-test-results.dir
 /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles/listener.dir
 /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles/occ_comb_map.dir

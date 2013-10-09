@@ -12,16 +12,8 @@ else
 
 fi
 
-cd project &
-
-#Used for testing
-# cp -r /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/bagfiles/path_rec.bag  /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/project/map1.bag &
-
-git add . &
-git pull 
-git commit -m 'New file added ' &
-git push origin master 
-
+cd launch &
+roslaunch pub_map1.launch &
 
 exec "$@"
 

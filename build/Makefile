@@ -148,6 +148,19 @@ ROSBUILD_gensrv_lisp/fast:
 .PHONY : ROSBUILD_gensrv_lisp/fast
 
 #=============================================================================
+# Target rules for targets named align_pub
+
+# Build rule for target.
+align_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 align_pub
+.PHONY : align_pub
+
+# fast build rule for target.
+align_pub/fast:
+	$(MAKE) -f CMakeFiles/align_pub.dir/build.make CMakeFiles/align_pub.dir/build
+.PHONY : align_pub/fast
+
+#=============================================================================
 # Target rules for targets named clean-test-results
 
 # Build rule for target.
@@ -382,6 +395,21 @@ tests/fast:
 .PHONY : tests/fast
 
 # target to build an object file
+src/align_pub.o:
+	$(MAKE) -f CMakeFiles/align_pub.dir/build.make CMakeFiles/align_pub.dir/src/align_pub.o
+.PHONY : src/align_pub.o
+
+# target to preprocess a source file
+src/align_pub.i:
+	$(MAKE) -f CMakeFiles/align_pub.dir/build.make CMakeFiles/align_pub.dir/src/align_pub.i
+.PHONY : src/align_pub.i
+
+# target to generate assembly for a file
+src/align_pub.s:
+	$(MAKE) -f CMakeFiles/align_pub.dir/build.make CMakeFiles/align_pub.dir/src/align_pub.s
+.PHONY : src/align_pub.s
+
+# target to build an object file
 src/coordinate_conversions.o:
 	$(MAKE) -f CMakeFiles/occupancy_grid_merge.dir/build.make CMakeFiles/occupancy_grid_merge.dir/src/coordinate_conversions.o
 .PHONY : src/coordinate_conversions.o
@@ -511,6 +539,7 @@ help:
 	@echo "... ROSBUILD_genmsg_lisp"
 	@echo "... ROSBUILD_gensrv_cpp"
 	@echo "... ROSBUILD_gensrv_lisp"
+	@echo "... align_pub"
 	@echo "... clean-test-results"
 	@echo "... edit_cache"
 	@echo "... listener"
@@ -531,6 +560,9 @@ help:
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
+	@echo "... src/align_pub.o"
+	@echo "... src/align_pub.i"
+	@echo "... src/align_pub.s"
 	@echo "... src/coordinate_conversions.o"
 	@echo "... src/coordinate_conversions.i"
 	@echo "... src/coordinate_conversions.s"

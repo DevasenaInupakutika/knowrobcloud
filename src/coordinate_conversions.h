@@ -36,41 +36,41 @@ const int8_t OCCUPIED=100;
 const int8_t UNKNOWN=255;
 
 
-/// \brief Returns the index of a cell.  
-/// 
-/// \throws CellOutOfBoundsException if cell isn't within grid bounds
+// Returns the index of a cell.  
+// 
+//throws CellOutOfBoundsException if cell isn't within grid bounds
 index_t cellIndex (const nav_msgs::MapMetaData& info, const Cell& c);
 
-/// \brief Returns cell corresponding to index
+//Returns cell corresponding to index
 Cell indexCell (const nav_msgs::MapMetaData& info, index_t ind);
 
-/// \brief Returns cell corresponding to a point.
-///
-/// The z coordinate of the point is ignored.
+//Returns cell corresponding to a point.
+//
+// The z coordinate of the point is ignored.
 Cell pointCell (const nav_msgs::MapMetaData& info, const geometry_msgs::Point& p);
 
-/// \brief Returns index of a point. 
-/// \throws CellOutOfBoundsException if point isn't within grid bounds
-///
-/// Ignores z coordinate of point
+//Returns index of a point. 
+//throws CellOutOfBoundsException if point isn't within grid bounds
+//
+//Ignores z coordinate of point
 index_t pointIndex (const nav_msgs::MapMetaData& info, const geometry_msgs::Point& p);
 
-/// \brief Return center of a cell
+//Return center of a cell
 geometry_msgs::Point cellCenter (const nav_msgs::MapMetaData& info, const Cell& c);
 
-/// \brief Return polygon corresponding to a cell
+//Return polygon corresponding to a cell
 geometry_msgs::Polygon cellPolygon (const nav_msgs::MapMetaData& info, const Cell& c);
 
-/// \brief Check if a point is on the grid
+//Check if a point is on the grid
 bool withinBounds (const nav_msgs::MapMetaData& info, const geometry_msgs::Point& p);
 
-/// \brief Check if a cell is on the grid
+//Check if a cell is on the grid
 bool withinBounds (const nav_msgs::MapMetaData& info, const Cell& c);
 
-/// \brief Return polygon corresponding to grid bounds
+//Return polygon corresponding to grid bounds
 geometry_msgs::Polygon gridPolygon (const nav_msgs::MapMetaData& info);
 
-/// \brief Verify that data vector has the right size, throw
+//Verify that data vector has the right size, throw
 /// DataSizeException otherwise
 void verifyDataSize (const nav_msgs::OccupancyGrid& g);
 
@@ -166,4 +166,4 @@ bool withinBounds (const nav_msgs::MapMetaData& info, const Cell& c)
 
 } // namespace occupancy_merge_grid
 
-#endif // include guard
+#endif 

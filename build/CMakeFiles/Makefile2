@@ -174,6 +174,41 @@ clean: CMakeFiles/ROSBUILD_gensrv_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/align_pub.dir
+
+# All Build rule for target.
+CMakeFiles/align_pub.dir/all: CMakeFiles/rosbuild_precompile.dir/all
+	$(MAKE) -f CMakeFiles/align_pub.dir/build.make CMakeFiles/align_pub.dir/depend
+	$(MAKE) -f CMakeFiles/align_pub.dir/build.make CMakeFiles/align_pub.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  1
+	@echo "Built target align_pub"
+.PHONY : CMakeFiles/align_pub.dir/all
+
+# Include target in all.
+all: CMakeFiles/align_pub.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/align_pub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/align_pub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles 0
+.PHONY : CMakeFiles/align_pub.dir/rule
+
+# Convenience name for target.
+align_pub: CMakeFiles/align_pub.dir/rule
+.PHONY : align_pub
+
+# clean rule for target.
+CMakeFiles/align_pub.dir/clean:
+	$(MAKE) -f CMakeFiles/align_pub.dir/build.make CMakeFiles/align_pub.dir/clean
+.PHONY : CMakeFiles/align_pub.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/align_pub.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/clean-test-results.dir
 
 # All Build rule for target.
@@ -211,7 +246,7 @@ clean: CMakeFiles/clean-test-results.dir/clean
 CMakeFiles/listener.dir/all: CMakeFiles/rosbuild_precompile.dir/all
 	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/depend
 	$(MAKE) -f CMakeFiles/listener.dir/build.make CMakeFiles/listener.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  2
 	@echo "Built target listener"
 .PHONY : CMakeFiles/listener.dir/all
 
@@ -247,7 +282,7 @@ CMakeFiles/occ_comb_map.dir/all: CMakeFiles/rosbuild_precompile.dir/all
 CMakeFiles/occ_comb_map.dir/all: CMakeFiles/occupancy_grid_merge.dir/all
 	$(MAKE) -f CMakeFiles/occ_comb_map.dir/build.make CMakeFiles/occ_comb_map.dir/depend
 	$(MAKE) -f CMakeFiles/occ_comb_map.dir/build.make CMakeFiles/occ_comb_map.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  3
 	@echo "Built target occ_comb_map"
 .PHONY : CMakeFiles/occ_comb_map.dir/all
 
@@ -282,7 +317,7 @@ clean: CMakeFiles/occ_comb_map.dir/clean
 CMakeFiles/occupancy_grid_merge.dir/all: CMakeFiles/rosbuild_precompile.dir/all
 	$(MAKE) -f CMakeFiles/occupancy_grid_merge.dir/build.make CMakeFiles/occupancy_grid_merge.dir/depend
 	$(MAKE) -f CMakeFiles/occupancy_grid_merge.dir/build.make CMakeFiles/occupancy_grid_merge.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  3 4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  4 5
 	@echo "Built target occupancy_grid_merge"
 .PHONY : CMakeFiles/occupancy_grid_merge.dir/all
 
@@ -317,7 +352,7 @@ clean: CMakeFiles/occupancy_grid_merge.dir/clean
 CMakeFiles/path_rec.dir/all: CMakeFiles/rosbuild_precompile.dir/all
 	$(MAKE) -f CMakeFiles/path_rec.dir/build.make CMakeFiles/path_rec.dir/depend
 	$(MAKE) -f CMakeFiles/path_rec.dir/build.make CMakeFiles/path_rec.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  6
 	@echo "Built target path_rec"
 .PHONY : CMakeFiles/path_rec.dir/all
 
@@ -352,7 +387,7 @@ clean: CMakeFiles/path_rec.dir/clean
 CMakeFiles/read_path.dir/all: CMakeFiles/rosbuild_precompile.dir/all
 	$(MAKE) -f CMakeFiles/read_path.dir/build.make CMakeFiles/read_path.dir/depend
 	$(MAKE) -f CMakeFiles/read_path.dir/build.make CMakeFiles/read_path.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  7
 	@echo "Built target read_path"
 .PHONY : CMakeFiles/read_path.dir/all
 
@@ -544,7 +579,7 @@ clean: CMakeFiles/rospack_gensrv.dir/clean
 CMakeFiles/stpoor_rec.dir/all: CMakeFiles/rosbuild_precompile.dir/all
 	$(MAKE) -f CMakeFiles/stpoor_rec.dir/build.make CMakeFiles/stpoor_rec.dir/depend
 	$(MAKE) -f CMakeFiles/stpoor_rec.dir/build.make CMakeFiles/stpoor_rec.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  8
 	@echo "Built target stpoor_rec"
 .PHONY : CMakeFiles/stpoor_rec.dir/all
 
@@ -579,7 +614,7 @@ clean: CMakeFiles/stpoor_rec.dir/clean
 CMakeFiles/talker.dir/all: CMakeFiles/rosbuild_precompile.dir/all
 	$(MAKE) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/depend
 	$(MAKE) -f CMakeFiles/talker.dir/build.make CMakeFiles/talker.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/turtlebot/fuerte_workspace/sandbox/knowrobcloud/build/CMakeFiles  9
 	@echo "Built target talker"
 .PHONY : CMakeFiles/talker.dir/all
 
